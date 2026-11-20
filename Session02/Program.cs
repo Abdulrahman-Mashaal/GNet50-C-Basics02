@@ -1,5 +1,7 @@
-﻿using System.Runtime.InteropServices;
-using Session02.Models;
+﻿using Session02.Models;
+using System.Drawing;
+using System.Runtime.InteropServices;
+using System.Runtime.Intrinsics.X86;
 
 namespace Session02
 {
@@ -68,11 +70,28 @@ namespace Session02
 
             #endregion
             #region Question 7
-            //-Q07. Given string pagesText = "464";, convert it into an int using the Convert class.
-            string pagesText = "464";
-            // Convert string to int using Convert class
-            int pagesInt = Convert.ToInt32(pagesText);
+            ////-Q07. Given string pagesText = "464";, convert it into an int using the Convert class.
+            //string pagesText = "464";
+            //// Convert string to int using Convert class
+            //int pagesInt = Convert.ToInt32(pagesText);
 
+            #endregion
+
+            #region Question 8
+            //-Q08. Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+            string yearText = "2023";
+            // Convert string to int using int.Parse()
+            int yearInt = int.Parse(yearText);
+            string badText = "abc";
+            // Safely convert string to int using int.TryParse()
+            if (int.TryParse(badText, out int badInt))
+            {
+                Console.WriteLine(badInt);
+            }
+            else
+            {
+                Console.WriteLine("Invalid number");
+            }
             #endregion
 
         }
