@@ -33,7 +33,24 @@ namespace Session02
             //int pages = "464";
             // Error Type: Compile-time error
             // Error: Cannot implicitly convert type 'string' to 'int'. Fix: Convert the string to an integer using int.Parse() or int.TryParse().
-            int pages = int.Parse("464");
+            //int pages = int.Parse("464");
+            #endregion
+
+            #region Question 4
+            //-Q04. Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block.
+            try
+            {
+                int divisor = 0;
+                int result = 10 / divisor;
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine("Cannot divide by zero");
+            }
+            finally
+            {
+                Console.WriteLine("Done");
+            }
             #endregion
 
         }
