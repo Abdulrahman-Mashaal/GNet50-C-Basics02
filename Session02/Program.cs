@@ -78,20 +78,29 @@ namespace Session02
             #endregion
 
             #region Question 8
-            //-Q08. Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
-            string yearText = "2023";
-            // Convert string to int using int.Parse()
-            int yearInt = int.Parse(yearText);
-            string badText = "abc";
-            // Safely convert string to int using int.TryParse()
-            if (int.TryParse(badText, out int badInt))
-            {
-                Console.WriteLine(badInt);
-            }
-            else
-            {
-                Console.WriteLine("Invalid number");
-            }
+            ////-Q08. Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+            //string yearText = "2023";
+            //// Convert string to int using int.Parse()
+            //int yearInt = int.Parse(yearText);
+            //string badText = "abc";
+            //// Safely convert string to int using int.TryParse()
+            //if (int.TryParse(badText, out int badInt))
+            //{
+            //    Console.WriteLine(badInt);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid number");
+            //}
+            #endregion
+
+            #region Question 9
+            //-Q09. Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.
+            int pages = 464;
+            // Convert int to string using ToString()
+            string pagesString = pages.ToString();
+            // Print the type of the converted string
+            Console.WriteLine(pagesString.GetType());
             #endregion
 
         }
