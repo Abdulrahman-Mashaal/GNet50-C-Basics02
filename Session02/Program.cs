@@ -16,16 +16,24 @@ namespace Session02
             #endregion
 
             #region Question 2
-            //-Q02. Using the Book class above, print the result of calling ToString(), Equals() (compare book withitself), GetHashCode(), and GetType() on book.
-            object bookObject = new Book("The Great Gatsby", 180);
-            Console.WriteLine("ToString():");
-            Console.WriteLine(bookObject.ToString());
-            Console.WriteLine("\nEquals():");
-            Console.WriteLine(bookObject.Equals(bookObject));
-            Console.WriteLine("\nGetHashCode():");
-            Console.WriteLine(bookObject.GetHashCode());
-            Console.WriteLine("\nGetType():");
-            Console.WriteLine(bookObject.GetType());
+            ////-Q02. Using the Book class above, print the result of calling ToString(), Equals() (compare book withitself), GetHashCode(), and GetType() on book.
+            //object bookObject = new Book("The Great Gatsby", 180);
+            //Console.WriteLine("ToString():");
+            //Console.WriteLine(bookObject.ToString());
+            //Console.WriteLine("\nEquals():");
+            //Console.WriteLine(bookObject.Equals(bookObject));
+            //Console.WriteLine("\nGetHashCode():");
+            //Console.WriteLine(bookObject.GetHashCode());
+            //Console.WriteLine("\nGetType():");
+            //Console.WriteLine(bookObject.GetType());
+            #endregion
+
+            #region Question 3
+            //-Q03. Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
+            //int pages = "464";
+            // Error Type: Compile-time error
+            // Error: Cannot implicitly convert type 'string' to 'int'. Fix: Convert the string to an integer using int.Parse() or int.TryParse().
+            int pages = int.Parse("464");
             #endregion
 
         }
