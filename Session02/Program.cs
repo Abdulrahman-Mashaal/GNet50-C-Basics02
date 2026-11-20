@@ -95,12 +95,23 @@ namespace Session02
             #endregion
 
             #region Question 9
-            //-Q09. Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.
-            int pages = 464;
-            // Convert int to string using ToString()
-            string pagesString = pages.ToString();
-            // Print the type of the converted string
-            Console.WriteLine(pagesString.GetType());
+            ////-Q09. Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.
+            //int pages = 464;
+            //// Convert int to string using ToString()
+            //string pagesString = pages.ToString();
+            //// Print the type of the converted string
+            //Console.WriteLine(pagesString.GetType());
+            #endregion
+
+            #region Question 10
+            //-Q10. Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.
+            int copies = 100;
+            // Box the int into an object variable
+            object copiesObject = copies;
+            // Unbox the object back into a new int variable
+            int copiesUnboxed = (int)copiesObject;
+            Console.WriteLine(copies);
+            Console.WriteLine(copiesUnboxed);
             #endregion
 
         }
