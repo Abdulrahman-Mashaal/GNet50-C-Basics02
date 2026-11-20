@@ -54,10 +54,17 @@ namespace Session02
             #endregion
 
             #region Question 5
-            //-Q05. Declare an int pages = 300; then store it in a double variable without using a cast.
-            int pages = 300;
-            // Implicit conversion from int to double
-            double pagesDouble = pages;
+            ////-Q05. Declare an int pages = 300; then store it in a double variable without using a cast.
+            //int pages = 300;
+            //// Implicit conversion from int to double
+            //double pagesDouble = pages;
+
+            #endregion
+            #region Question 6
+            ////-Q06. Declare a double price = 49.99; then convert it into an int using a cast.
+            //double price = 49.99;
+            //// Explicit conversion from double to int using a cast
+            //int priceInt = (int)price;
 
             #endregion
 
